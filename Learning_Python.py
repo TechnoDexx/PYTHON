@@ -9,4 +9,4 @@ from libs import Internet
 
 Hello.SayHello()
 Test.Test()
-Internet.GetHTML("http://mail.ru")
+print(Internet.GetHTML('http://mail.ru'))
