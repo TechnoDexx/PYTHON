@@ -8,3 +8,5 @@ import urllib.request
 def GetHTML(url):
     response=urllib.request.urlopen(url)
     return response.read()
+def HTML():
+    print('HTML')
