@@ -4,9 +4,9 @@ setup(
     name='Test Package',
     version='0.0.0.1a',
     packages=['libs', 'Test'],
-    url='',
+    url='http://',
     license='',
-    author='Владелец',
-    author_email='',
+    author='Igor Golov',
+    author_email='oldghost07@mail.ru',
     description=''
 )

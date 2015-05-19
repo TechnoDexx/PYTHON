@@ -1,12 +1,16 @@
 '''
-Created on 01.02.2015
+created on 01.02.2015
 
-@author: Владелец
+@author: владелец
 '''
-from libs import Hello
-from Test import Test
-from libs import Internet
+import os
 
-Hello.SayHello()
-Test.Test()
-print(Internet.GetHTML('http://mail.ru'))
+from libs import hello
+from test import test
+from libs import internet
+
+hello.sayhello()
+test.test()
+print(os.environ['home'])
+print(internet.gethtml('http://mail.ru'))
+internet.html()
