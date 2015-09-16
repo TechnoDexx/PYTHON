@@ -6,7 +6,7 @@ setup(
     packages=['libs', 'Test'],
     url='http://',
     license='',
-    author='Igor Golov',
+    author="Igor Golov",
     author_email='oldghost07@mail.ru',
     description=''
 )

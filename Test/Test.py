@@ -1,7 +1,9 @@
-'''
+"""
 Created on 30.01.2015
 
 @author: Владелец
-'''
-def Test():
+"""
+
+
+def test():
     print('Test Completed!')

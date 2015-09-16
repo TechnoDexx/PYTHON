@@ -1,42 +1,45 @@
-'''
+"""
 created on 01.02.2015
 
 @author: владелец
-'''
+"""
 
 a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 b = [10, 11, 12, 13, 14, 15, 16]
 
-def addval(l,value):
-    res=[]
+
+def addval(l, value):
+    res = []
     for i in l:
-        res.append(i+value)
+        res.append(i + value)
     return res
 
 
+def intercept(x, y):
+    x = set(x)
+    res = []
+    for i in y:
+        if i in x:
+            res.append(i)
+    return res
 
-def intercept(x,y):
-   x=set(x)
-   res = []
-   for i in y:
-       if i in x:
-           res.append(i)
-   return res
 
 def minimum(l):
-    min = 1000
+    _min = 1000
     for m in l:
-        if m < min:
-            min = m
-    return min
+        if m < _min:
+            _min = m
+    return _min
+
 
 def maximum(l):
-    max = 0
+    _max = 0
     for g in l:
-        if g > max:
-            max = g
-    return max
+        if g > _max:
+            _max = g
+    return _max
+
 
 def avg(l):
     _sum = 0
@@ -47,16 +50,16 @@ def avg(l):
     return _sum / count
 
 
-a = addval(a,3)
-print('a =',a)
-b = addval(b,-3)
-print('b =',b)
+a = addval(a, 3)
+print('a =', a)
+b = addval(b, -3)
+print('b =', b)
 print()
-print('min(a) =', minimum(a),"| max(a) = ", maximum(a))
-print('average(a) =',avg(a))
+print('min(a) =', minimum(a), "| max(a) = ", maximum(a))
+print('average(a) =', avg(a))
 print()
-print('min(b) =', minimum(b),"| max(b) = ", maximum(b))
-print('average(b) =',avg(b))
+print('min(b) =', minimum(b), "| max(b) = ", maximum(b))
+print('average(b) =', avg(b))
 print()
-print('intercept(a,b) =',intercept(a,b))
-print(sum(a),'|',sum(b))
+print('intercept(a,b) =', intercept(a, b))
+print(sum(a), '|', sum(b))
