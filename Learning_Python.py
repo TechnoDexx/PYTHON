@@ -40,7 +40,6 @@ def maximum(l):
             _max = g
     return _max
 
-
 def avg(l):
     _sum = 0
     count = 0
@@ -61,5 +60,5 @@ print()
 print('min(b) =', minimum(b), "| max(b) = ", maximum(b))
 print('average(b) =', avg(b))
 print()
-print('intercept(a,b) =', intercept(a, b))
-print(sum(a), '|', sum(b))
+print('intercept(a,b) =', intercept(a, b),'\n')
+print('sum(a) =',sum(a), '| sum(b) =', sum(b))
