@@ -3,33 +3,60 @@ created on 01.02.2015
 
 @author: владелец
 '''
+
 a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
+b = [10, 11, 12, 13, 14, 15, 16]
 
-max = 0
-print(a)
-def min(l):
+def addval(l,value):
+    res=[]
+    for i in l:
+        res.append(i+value)
+    return res
+
+
+
+def intercept(x,y):
+   x=set(x)
+   res = []
+   for i in y:
+       if i in x:
+           res.append(i)
+   return res
+
+def minimum(l):
     min = 1000
     for m in l:
         if m < min:
             min = m
     return min
 
-def max(l):
+def maximum(l):
     max = 0
     for g in l:
         if g > max:
             max = g
     return max
-def  avg(l):
 
-    sum = 0
+def avg(l):
+    _sum = 0
     count = 0
     for k in l:
-        sum = sum + k
-        count = count + 1
-    return sum / count
+        _sum = _sum + k
+        count += 1
+    return _sum / count
 
+
+a = addval(a,3)
+print('a =',a)
+b = addval(b,-3)
+print('b =',b)
 print()
-print('min =', min(a),"| max = ", max(a))
-print(avg(a))
+print('min(a) =', minimum(a),"| max(a) = ", maximum(a))
+print('average(a) =',avg(a))
+print()
+print('min(b) =', minimum(b),"| max(b) = ", maximum(b))
+print('average(b) =',avg(b))
+print()
+print('intercept(a,b) =',intercept(a,b))
+print(sum(a),'|',sum(b))
