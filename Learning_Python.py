@@ -5,9 +5,8 @@ created on 01.02.2015
 '''
 import os
 
-from libs import hello
+import libs
 from test import test
-from libs import internet
 
 hello.sayhello()
 test.test()
