@@ -6,10 +6,13 @@ created on 01.02.2015
 
 a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-b = [10, 11, 12, 13, 14, 15, 16]
+b = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+
+json = ""
 
 
 def addval(l, value):
+    l = set(l)
     res = []
     for i in l:
         res.append(i + value)
@@ -18,6 +21,7 @@ def addval(l, value):
 
 def intercept(x, y):
     x = set(x)
+    y = set(y)
     res = []
     for i in y:
         if i in x:
@@ -42,17 +46,15 @@ def maximum(l):
 
 
 def avg(l):
-    _sum = 0
     count = 0
-    for k in l:
-        _sum = _sum + k
+    for _ in l:
         count += 1
-    return _sum / count
+    return sum(l) / count
 
 
-a = addval(a, 3)
+a = addval(a, 0)
 print('a =', a)
-b = addval(b, -3)
+b = addval(b, 0)
 print('b =', b)
 print()
 print('min(a) =', minimum(a), "| max(a) = ", maximum(a))

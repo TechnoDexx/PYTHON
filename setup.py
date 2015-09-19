@@ -1,12 +1,13 @@
 from distutils.core import setup
 
 setup(
-    name='Test Package',
-    version='0.0.0.1a',
-    packages=['libs', 'Test'],
+    name='PYTHON',
+    version='.0.1',
+    packages=['libs', 'Test', 'build.lib.libs', 'build.lib.Test', 'build.bdist.win32.msi.Lib.site-packages.libs',
+              'build.bdist.win32.msi.Lib.site-packages.Test'],
     url='http://',
     license='',
-    author="Igor Golov",
-    author_email='oldghost07@mail.ru',
-    description=''
+    author='Owner',
+    author_email='itshark@mail.ru',
+    description='', requires=['pyodbc']
 )
