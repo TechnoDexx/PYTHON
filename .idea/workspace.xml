@@ -545,7 +545,13 @@
       <option name="project" value="LOCAL" />
       <updated>1442654283297</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Code refactoring after inspection &amp; cosmetics">
+      <created>1442654296881</created>
+      <option name="number" value="00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1442654296881</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TodoView" selected-index="1">
