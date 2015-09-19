@@ -59,6 +59,7 @@ def function_testing(one, two):
     print('b =', two)
     print()
     print('min(a) =', minimum(one), "| max(a) = ", maximum(one))
+    print()
     print('average(a) =', avg(one))
     print()
     print('min(b) =', minimum(two), "| max(b) = ", maximum(two))
@@ -67,3 +68,7 @@ def function_testing(one, two):
     print('intercept(a,b) =', intercept(one, two), '\n')
     print('sum(a) =', sum(one), '| sum(b) =', sum(two))
     return
+
+
+function_testing(a, b)
+
