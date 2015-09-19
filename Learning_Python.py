@@ -52,16 +52,18 @@ def avg(l):
     return sum(l) / count
 
 
-a = addval(a, 0)
-print('a =', a)
-b = addval(b, 0)
-print('b =', b)
-print()
-print('min(a) =', minimum(a), "| max(a) = ", maximum(a))
-print('average(a) =', avg(a))
-print()
-print('min(b) =', minimum(b), "| max(b) = ", maximum(b))
-print('average(b) =', avg(b))
-print()
-print('intercept(a,b) =', intercept(a, b), '\n')
-print('sum(a) =', sum(a), '| sum(b) =', sum(b))
+def function_testing(one, two):
+    one = addval(one, 0)
+    print('a =', one)
+    two = addval(two, 0)
+    print('b =', two)
+    print()
+    print('min(a) =', minimum(one), "| max(a) = ", maximum(one))
+    print('average(a) =', avg(one))
+    print()
+    print('min(b) =', minimum(two), "| max(b) = ", maximum(two))
+    print('average(b) =', avg(two))
+    print()
+    print('intercept(a,b) =', intercept(one, two), '\n')
+    print('sum(a) =', sum(one), '| sum(b) =', sum(two))
+    return
