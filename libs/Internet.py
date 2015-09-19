@@ -1,10 +1,16 @@
-'''
+"""
 Created on 30.01.2015
 
 @author: Владелец
-'''
+"""
 import urllib.request
+import urllib.response
 
-def GetHTML(url):
-    response=urllib.request.urlopen(url)
+
+def gethtml(url):
+    response = urllib.request.urlopen(url)
     return response.read()
+
+
+def html():
+    print('html')

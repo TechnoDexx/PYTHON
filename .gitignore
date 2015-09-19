@@ -1,7 +1,2 @@
-*.class
-*.pyc
-*.pyo
-
 dist
 build
-build/lib
