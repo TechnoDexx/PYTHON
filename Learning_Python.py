@@ -52,23 +52,26 @@ def avg(l):
     return sum(l) / count
 
 
-def function_testing(one, two):
-    one = addval(one, 0)
-    print('a =', one)
-    two = addval(two, 0)
-    print('b =', two)
+def function_testing(first_list, second_list,  addingvalue_one=0, addingvalue_two=0):
+    first_list = addval(first_list, addingvalue_one)
+    second_list = addval(second_list, addingvalue_two)
+
     print()
-    print('min(a) =', minimum(one), "| max(a) = ", maximum(one))
+    print('a =', first_list)
+    print('b =', second_list)
     print()
-    print('average(a) =', avg(one))
+    print('min(a) =', minimum(first_list), "| max(a) = ", maximum(first_list))
     print()
-    print('min(b) =', minimum(two), "| max(b) = ", maximum(two))
-    print('average(b) =', avg(two))
+    print('average(a) =', avg(first_list))
     print()
-    print('intercept(a,b) =', intercept(one, two), '\n')
-    print('sum(a) =', sum(one), '| sum(b) =', sum(two))
+    print('min(b) =', minimum(second_list), "| max(b) = ", maximum(second_list))
+
+    print('average(b) =', avg(second_list))
+    print()
+    print('intercept(a,b) =', intercept(first_list, second_list), '\n')
+    print('sum(a) =', sum(first_list), '| sum(b) =', sum(second_list))
     return
 
 
-function_testing(a, b)
+function_testing(a, b, 3, 4)
 
